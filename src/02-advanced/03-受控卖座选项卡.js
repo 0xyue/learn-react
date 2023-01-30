@@ -8,14 +8,28 @@ import Navbar from './maizuocomponent2/Navbar'
 
 export default class App extends Component {
     state = {
-        currentIndex: 0
+        currentIndex: 0,
+        list: [
+            {
+                id: 0,
+                text: "电影"
+            },
+            {
+                id: 1,
+                text: "影院"
+            },
+            {
+                id: 2,
+                text: "我的"
+            }
+        ]
     }
     render() {
         return (
             <div>
                 <Navbar event={() => { this.navbarEvent() }} />
                 {this.which()}
-                <Tabbar currentIndex={this.state.currentIndex} event={(index) => { this.tabbarEvent(index) }} />
+                <Tabbar list={this.state.list} currentIndex={this.state.currentIndex} event={(index) => { this.tabbarEvent(index) }} />
             </div>
         )
     }
