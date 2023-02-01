@@ -1,0 +1,517 @@
+{
+    "status": 0,
+    "data": {
+        "films": [
+            {
+                "filmId": 6196,
+                "name": "满江红",
+                "poster": "https://pic.maizuo.com/usr/movie/7a61b5f8e702ce6c705a9b51db7a62e7.jpg",
+                "actors": [
+                    {
+                        "name": "易烊千玺",
+                        "role": "孙均",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3fc2e73e5b182083d6b64f46d33cc85a.jpg"
+                    },
+                    {
+                        "name": "张译",
+                        "role": "何立",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/ff9aafa8c6033a1277d5ecd65822f8ae.jpg"
+                    },
+                    {
+                        "name": "雷佳音",
+                        "role": "秦桧",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/f8bc995baa59dde9b10f81a3dea75bfd.jpg"
+                    },
+                    {
+                        "name": "张艺谋",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/901cd60e86dca068bdfbccb2457a28f6.jpg"
+                    },
+                    {
+                        "name": "沈腾",
+                        "role": "张大",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/48263e7ec640a0eb85b8afec2648bcc3.jpg"
+                    }
+                ],
+                "director": "张艺谋",
+                "category": "悬疑|喜剧|剧情",
+                "synopsis": "张艺谋集结绝版阵容再战春节档，双男主沈腾、易烊千玺首度同框飙戏，超强班底携手打造春节必看大片《满江红》！南宋绍兴年间，岳飞死后四年，秦桧率兵与金国会谈。会谈前夜，金国使者死在宰相驻地，所携密信也不翼而飞。小兵张大（沈腾 饰）与亲兵营副统领孙均（易烊千玺 饰）机缘巧合被裹挟进这巨大阴谋之中，宰相秦桧（雷佳音 饰）命两人限一个时辰之内找到凶手。伴随危机四伏的深入调查，宰相府总管何立（张译 饰）、副总管武义淳（岳云鹏 饰）、舞姬瑶琴（王佳怡 饰）等人卷入局中，案件的背后似乎隐藏着一场更大的阴谋。局中有局、人心叵测，一夜之间风云变幻，各方势力暗流涌动……",
+                "filmType": {
+                    "name": "4D",
+                    "value": 13
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 159,
+                "grade": "7.6",
+                "item": {
+                    "name": "4D",
+                    "type": 13
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6118,
+                "name": "流浪地球2",
+                "poster": "https://pic.maizuo.com/usr/movie/228a4e54fecfdb1c843f83ed28f947d6.jpg",
+                "actors": [
+                    {
+                        "name": "郭帆",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/49d7bb00e0a2a9199441db5354b65f28.jpg"
+                    },
+                    {
+                        "name": "吴京",
+                        "role": "刘培强",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/80f93f06a5fcbbbf0a9085125b2a93b2.jpg"
+                    },
+                    {
+                        "name": "刘德华",
+                        "role": "图恒宇",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/a5fc45490b819cda18057b127816b7a3.jpg"
+                    },
+                    {
+                        "name": "李雪健",
+                        "role": "周喆直",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/6c377dc94628b41e23c924da29cc7ced.jpg"
+                    },
+                    {
+                        "name": "沙溢",
+                        "role": "张鹏",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3900b570ca1c916ad7be53cdd05089b0.jpg"
+                    }
+                ],
+                "director": "郭帆",
+                "category": "科幻|冒险|灾难",
+                "synopsis": "太阳即将毁灭，人类在地球表面建造出巨大的推进器，寻找新的家园，然而宇宙之路危机四伏，为了拯救地球，流浪地球时代的年轻人再次挺身而出，展开争分夺秒的生死之战...",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 173,
+                "grade": "7.1",
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6193,
+                "name": "熊出没·伴我“熊芯”",
+                "poster": "https://pic.maizuo.com/usr/movie/5ad5870a1467a1c41b6652687c9c7180.jpg",
+                "actors": [
+                    {
+                        "name": "林永长",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/f4515f214d42847e99d0d4028b79afdf.jpg"
+                    },
+                    {
+                        "name": "邵和麒",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/40fd91d6735e7aee2fd1b73b7805ea29.jpg"
+                    },
+                    {
+                        "name": "张秉君",
+                        "role": "熊二",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bd8de45b74a8bbe8055d07c73f48a01e.jpg"
+                    },
+                    {
+                        "name": "谭笑",
+                        "role": "光头强",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/abe41440708df60731b1c8dc7008bcdb.jpg"
+                    },
+                    {
+                        "name": "张伟",
+                        "role": "熊大",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/95c11a297935fc2b6616d95aaaff0a3b.png"
+                    }
+                ],
+                "director": "林永长|邵和麒",
+                "category": "动画|喜剧|科幻|剧情",
+                "synopsis": "一个普通的森林夜晚，对小熊大、小熊二宠爱有加的熊妈妈，在一场大火后离开了他们，两熊伤心不已……转眼多年过去，光头强带熊大熊二前往振兴岛参观机器人研究所，却意外得到了熊妈妈的线索，为此熊大、熊二一路探寻…… 熊妈当年为何不告而别？两熊最终是否能找到妈妈？迷雾重重的背后还有怎样的故事？一切谜团等待揭晓。",
+                "filmType": {
+                    "name": "3D",
+                    "value": 2
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 96,
+                "grade": "7.2",
+                "item": {
+                    "name": "3D",
+                    "type": 2
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6198,
+                "name": "无名",
+                "poster": "https://pic.maizuo.com/usr/movie/40d6f1bd1f95a5fa103f593390a3078e.jpg",
+                "actors": [
+                    {
+                        "name": "王一博",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/fd239dabe7f2045116bff76b8be42e91.jpg"
+                    },
+                    {
+                        "name": "周迅",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/323057d90426543e49f5674d8cd42dc7.jpg"
+                    },
+                    {
+                        "name": "黄磊",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3d1b86794767e0b31b9ff23f1b22308a.jpg"
+                    },
+                    {
+                        "name": "程耳",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/dfa00db2a1753358942a76d0526b5f1b.jpg"
+                    },
+                    {
+                        "name": "梁朝伟",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/dde9116fbb432a327cc2f71e9603da58.jpg"
+                    }
+                ],
+                "director": "程耳",
+                "category": "悬疑|动作|剧情",
+                "synopsis": "影片通过对上世纪二十年代开始奋斗在上海的中国共产党领导下的中共特科，在隐蔽战线与各方势力殊死较量过程的再现，表现了在走向胜利过程中不可或缺的党的秘密战线上那些无名英雄，他们不可取代的贡献。全面抗战爆发后，中国共产党领导的中共特科在上海周旋于重庆、汪伪、日本间谍机构之间，通过错综复杂的敌后情报系统，策反敌人，获取情报，诛杀汉奸，建立更广泛的统一战线，直至抗战胜利的前夜…...",
+                "filmType": {
+                    "name": "4D",
+                    "value": 13
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 128,
+                "grade": "7.6",
+                "item": {
+                    "name": "4D",
+                    "type": 13
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6197,
+                "name": "深海",
+                "poster": "https://pic.maizuo.com/usr/movie/a3096eb4b17355e4baf21554d682cc05.jpg",
+                "actors": [
+                    {
+                        "name": "苏鑫",
+                        "role": "配音演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/0894ea7a2f937c31e554d2f5d0e29e69.jpg"
+                    },
+                    {
+                        "name": "王亭文",
+                        "role": "配音演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/ac66ae8ceea95c8e73a5889b8715eef5.jpg"
+                    },
+                    {
+                        "name": "田晓鹏",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3a0df4d24afe274ca19c6668846ff907.jpg"
+                    }
+                ],
+                "director": "田晓鹏",
+                "category": "奇幻|动画",
+                "synopsis": "大年初一，献给走过长夜的你。为心结所困的少女（参宿）误入梦幻深海世界，与来自“深海”的魔法船长南河，在一段奇幻冒险中寻找生命的答案......《大圣归来》导演田晓鹏7年全新力作，春节档必看巅峰视效大片！",
+                "filmType": {
+                    "name": "4D",
+                    "value": 13
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 112,
+                "grade": "7.6",
+                "item": {
+                    "name": "4D",
+                    "type": 13
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6200,
+                "name": "交换人生",
+                "poster": "https://pic.maizuo.com/usr/movie/920ab6ba06510de627f150ac78ed337c.jpg",
+                "actors": [
+                    {
+                        "name": "苏伦",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/732d88e447d2602c3e69a7086966bc6f.jpg"
+                    },
+                    {
+                        "name": "雷佳音",
+                        "role": "仲达",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/f8bc995baa59dde9b10f81a3dea75bfd.jpg"
+                    },
+                    {
+                        "name": "张小斐",
+                        "role": "金好",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/8f9ba7389cb0ce63ee6a5bf43c8dbbf0.jpg"
+                    },
+                    {
+                        "name": "张宥浩",
+                        "role": "陆小谷",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c46428aea1bcfa2e53c1af240f791755.jpg"
+                    },
+                    {
+                        "name": "沙溢",
+                        "role": "陆小谷爸爸",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3900b570ca1c916ad7be53cdd05089b0.jpg"
+                    }
+                ],
+                "director": "苏伦",
+                "category": "喜剧|家庭",
+                "synopsis": "如果交换人生会交换家人，你还愿意吗？仲达（雷佳音 饰）与金好（张小斐 饰）相亲后，意外和暗恋金好的少年陆小谷（张宥浩 饰）换身，并误打误撞交换了家人，开启了令人捧腹有笑有泪的奇“换”之旅……",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1674345600,
+                "timeType": 3,
+                "runtime": 110,
+                "grade": "7.2",
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6203,
+                "name": "风再起时",
+                "poster": "https://pic.maizuo.com/usr/movie/c45b2d6e1a487435726f6ae35d6dc696.jpg",
+                "actors": [
+                    {
+                        "name": "翁子光",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/eb1c8639fde64529e10517521a3000ae.jpg"
+                    },
+                    {
+                        "name": "郭富城",
+                        "role": "磊乐",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bcb5b34461bff36771f7f7201090f057.jpg"
+                    },
+                    {
+                        "name": "梁朝伟",
+                        "role": "南江",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/dde9116fbb432a327cc2f71e9603da58.jpg"
+                    },
+                    {
+                        "name": "杜鹃",
+                        "role": "蔡真",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/f49270d6933932cc05f45946a409801e.jpg"
+                    },
+                    {
+                        "name": "许冠文",
+                        "role": "李子超",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/06a9ae0d4054d5d9dd939ab298602272.jpg"
+                    }
+                ],
+                "director": "翁子光",
+                "category": "犯罪|剧情|动作",
+                "synopsis": "郭富城、梁朝伟双影帝大银幕首度合作，刺激枪战、权谋博弈、情爱相争，动作商业大片爽燃元宵佳节！张扬敢拼的磊乐（郭富城 饰）与内敛善谋的南江（梁朝伟 饰），在因缘际会下携手，破除旧规，立威造势，在磊乐太太蔡真（杜鹃 饰）的斡旋下，成为黑白两道人人皆知的“双雄探长”，二人自此叱咤香港三十年。然而在表面的平静与制衡之下，火并、谋杀、背叛、夺权……暗流涌动，一触即发！",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆,中国香港",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1675555200,
+                "timeType": 3,
+                "runtime": 143,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6165,
+                "name": "阿凡达：水之道",
+                "poster": "https://pic.maizuo.com/usr/movie/fceeb41a1660d097d02fbcbda3191d8f.jpg",
+                "actors": [
+                    {
+                        "name": "詹姆斯·卡梅隆",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/4da6b697aabe63657edd65aa1b660a04.jpg"
+                    },
+                    {
+                        "name": "萨姆·沃辛顿",
+                        "role": "杰克·萨利 Jake Sully",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c0802754994c52632632fa14a9d8b2c6.jpg"
+                    },
+                    {
+                        "name": "佐伊·索尔达娜",
+                        "role": "奈蒂莉 Neytiri",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/49c7212edfcbec66dd57f03f8b290bcc.jpg"
+                    },
+                    {
+                        "name": "西格妮·韦弗",
+                        "role": "格蕾丝·奥格斯汀 Dr. Grace Augustin",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c46f06dd60095aa9c5eb60492ae5fe3d.jpg"
+                    },
+                    {
+                        "name": "史蒂芬·朗",
+                        "role": "迈尔斯·夸奇上校 Miles Quaritch",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e3ce341c0166a7a7762f111bac80e161.jpg"
+                    }
+                ],
+                "director": "詹姆斯·卡梅隆",
+                "category": "动作|冒险|科幻",
+                "synopsis": "《阿凡达：水之道》的剧情承接自第一部的5年之后。曾经的地球残疾军人杰克·萨利，如今已经是潘多拉星球纳美族一方部族的族长，并且与爱妻娜塔莉共同育有一对可爱的儿女，日子过得平淡而充实。然而某天，有个部族的兄弟在海岸附近巡逻时遭到利器割喉身亡。通过现场勘查，以及作为前海军陆战队员的敏锐直觉，杰克判断已经有人类的阿凡达混入了部落……",
+                "filmType": {
+                    "name": "3D",
+                    "value": 2
+                },
+                "nation": "美国",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1671148800,
+                "timeType": 3,
+                "runtime": 190,
+                "grade": "7.4",
+                "item": {
+                    "name": "3D",
+                    "type": 2
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6178,
+                "name": "穿靴子的猫2",
+                "poster": "https://pic.maizuo.com/usr/movie/6982928ce7293b45f46d34a24115cb33.jpg",
+                "actors": [
+                    {
+                        "name": "乔尔·克劳福德",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/201d0f60b7a8798327b2900d7d2cef74.jpg"
+                    },
+                    {
+                        "name": "安东尼奥·班德拉斯",
+                        "role": "Puss in Boots",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c6db7a6dccebce593b717c1fc2e032d5.jpg"
+                    },
+                    {
+                        "name": "萨尔玛·海耶克",
+                        "role": "Kitty Softpaws",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/4b2724712ce5eafde1413ad23bac6b20.jpg"
+                    },
+                    {
+                        "name": "哈维·吉兰",
+                        "role": "Perro",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/b7318669a7232727f2e0c7f242fbbe22.jpg"
+                    },
+                    {
+                        "name": "弗洛伦斯·皮尤",
+                        "role": "Goldilocks",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e1b89ecf8c5971e1da1d9b195d45cf1f.jpg"
+                    }
+                ],
+                "director": "乔尔·克劳福德",
+                "category": "动画|奇幻|家庭",
+                "synopsis": "喵！谁能拒绝喵星人毛茸茸的陪伴？橘猫顶流即将强势回归，为你带来抵御寒风的温暖能量。这次，传奇大侠靴猫将和老搭档新队友并肩开启怎样的全新冒险之旅呢？在不知不觉中挥霍掉了自己九条命中的八条的他为了找回失去的生命，即将踏上一段史诗般的旅程——进入黑森林寻找神话中的许愿星，许下“最后的愿望”。这次穿靴子的猫和老搭档兼“宿敌”软爪妞，还有新队友小狗佩罗将组成“友谊铁三角”，新老朋友齐聚首，全新高能冒险即将开启。作为《怪物史瑞克》世界中的一段全新冒险，《穿靴子的猫2》将有更丰满的故事与更扣人心弦的情节。特别是小狗佩罗、金发姑娘和三只熊犯罪家族等新角色的加入，将带来更多暖心治愈的元素。梦工场动画巨制，即将全球献映。",
+                "filmType": {
+                    "name": "3D",
+                    "value": 2
+                },
+                "nation": "美国",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1671753600,
+                "timeType": 3,
+                "runtime": 102,
+                "grade": "7.8",
+                "item": {
+                    "name": "3D",
+                    "type": 2
+                },
+                "isPresale": true,
+                "isSale": false
+            },
+            {
+                "filmId": 6205,
+                "name": "不能流泪的悲伤",
+                "poster": "https://pic.maizuo.com/usr/movie/da26a6eaff441777d497ec05be25c301.jpg",
+                "actors": [
+                    {
+                        "name": "唐家辉",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/ef7dde62fdcd3a7c3d071046e8541127.jpg"
+                    },
+                    {
+                        "name": "何蓝逗",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/a208a00a787e947f716fdb06b9a6e85a.png"
+                    },
+                    {
+                        "name": "蔡凡熙",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/d30b8de81c207fedf7a4e497fba53b5e.jpg"
+                    },
+                    {
+                        "name": "王耀庆",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/0a499c7dda7a77f061f4bee182832748.jpg"
+                    },
+                    {
+                        "name": "许光汉",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/6d1d805de361b777d0910f9646df2f24.jpg"
+                    }
+                ],
+                "director": "唐家辉",
+                "category": "爱情",
+                "synopsis": "何蓝逗、蔡凡熙领衔主演，许光汉特别出演，邂逅“初恋即一生”的治愈爱情！从青梅竹马到年少心动，赵心卉（何蓝逗 饰）和林汉聪（蔡凡熙 饰）认定彼此是携手一生的人，然而面对距离的隔阂、家庭的牵绊，以及学长陈孝名（许光汉 饰）的惊喜告白，让两人一次次走散。坚持还是放手？在心卉犹豫之时， 邻居大叔（王耀庆 饰）对爱情的笃定令她动容，她能否找回遗失的爱人，收获相伴一生的美满爱情？",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1676332800,
+                "timeType": 3,
+                "runtime": 97,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": true,
+                "isSale": false
+            }
+        ],
+        "total": 21
+    },
+    "msg": "ok"
+}
