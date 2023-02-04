@@ -3,7 +3,7 @@ import React from "react";
 // ReactDOM帮我们把React组件渲染到页面上
 import ReactDOM from 'react-dom/client';
 
-import App from './02-advanced/19-生命周期-销毁'
+import App from './02-advanced/24-性能优化'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
