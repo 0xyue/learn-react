@@ -26,6 +26,9 @@ export default class MRouter extends Component {
                         <Route path="/cinemas" component={Cinemas} />
                         {/* <Route path="/center" component={Center} /> */}
                         {/* 路由拦截 */}
+                        {/* <Route path="/center" render={(props) => {
+                            return isAuth() ? <Center {...props} /> : <Redirect to="/login" />
+                        }} /> */}
                         <Route path="/center" render={(props) => {
                             return isAuth() ? <Center /> : <Redirect to="/login" />
                         }} />
