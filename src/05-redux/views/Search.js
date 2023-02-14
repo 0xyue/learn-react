@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import store from '../redux/store'
 import getCinemaListAction from '../redux/actionCreator/getCinemaListAction'
 
+export default function Search() {
 
-export default function Cinemas(props) {
-
-    const [city] = useState(store.getState().CityReducer.city)
     const [list, setList] = useState(store.getState().CinemaListReducer.list)
-
+    const [mytext, setMytext] = useState("")
     useEffect(() => {
         if (store.getState().CinemaListReducer.list.length === 0) {
             // 去后台取数据 actionCreator 里写异步
             store.dispatch(getCinemaListAction())
         } else {
-            console.log("cinema中,store 缓存")
+            console.log("search中,store 缓存")
         }
 
         // 订阅
         var unsubscribe = store.subscribe(() => {
-            console.log("cinema中订阅", store.getState())
+            console.log("Search中订阅", store.getState())
             setList(store.getState().CinemaListReducer.list)
         })
         return () => {
@@ -29,19 +27,20 @@ export default function Cinemas(props) {
 
     }, [])
 
-
+    const getCinemaList = useMemo(
+        () => {
+            console.log("useMemo")
+            return list.filter(item =>
+                item.name.toUpperCase().includes(mytext.toUpperCase()) ||
+                item.address.toUpperCase().includes(mytext.toUpperCase())
+            )
+        }, [list, mytext]
+    )
     return (
         <div>
-            <div style={{ overflow: "hidden" }}>
-                <div onClick={() => {
-                    props.history.push(`/city`)
-                }} style={{ float: "left" }}>{city}</div>
-                <div onClick={() => {
-                    props.history.push(`/cinemas/search`)
-                }} style={{ float: "right" }}>搜索</div>
-            </div>
+            <input value={mytext} onChange={(evt) => { setMytext(evt.target.value) }} />
             {
-                list.map((item) => {
+                getCinemaList.map((item) => {
                     return (
                         <dl key={item.cinemaId} style={{ padding: "10px" }}>
                             <dt>{item.name}</dt>
@@ -50,7 +49,6 @@ export default function Cinemas(props) {
                     )
                 })
             }
-
         </div>
     )
 }
