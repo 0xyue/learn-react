@@ -1,7 +1,8 @@
 // 1.引入redux  npm i redux
 // 2.createStore( reducer )
 
-import { createStore } from 'redux'
+// import { createStore } from 'redux'
+import createYueStore from "./yueStore"
 
 const reducer = (prevState = { show: true }, action) => {
     let newState = { ...prevState }
@@ -18,6 +19,7 @@ const reducer = (prevState = { show: true }, action) => {
 
 }
 
-const store = createStore(reducer)
+// const store = createStore(reducer)
+const store = createYueStore(reducer)
 
 export default store
