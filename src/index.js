@@ -1,15 +1,17 @@
-// 写React.js必须引入React，包含JSX
-import React from "react";
-// ReactDOM帮我们把React组件渲染到页面上
-import ReactDOM from 'react-dom/client';
-
+import React from "react"
+import ReactDOM from 'react-dom/client'
 import App from './06-react-redux/App'
+import { Provider } from "react-redux"
+import { store, persistor } from './06-react-redux/redux/store'
+import { PersistGate } from "redux-persist/integration/react"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// render 方法可以渲染组件构造DOM树，插入到页面特定元素上
 root.render(
-    // 这是JSX- JavaScript XML 语法
-    // <h1>hello world</h1>
-    <App />
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+            <App />
+        </PersistGate>
+    </Provider>
 );

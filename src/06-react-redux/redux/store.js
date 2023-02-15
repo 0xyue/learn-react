@@ -10,16 +10,30 @@ import CinemaListReducer from './reducers/CinemaListReducer'
 import reduxThunk from 'redux-thunk'
 import reduxPromise from 'redux-promise'
 
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
+
+
+const persistConfig = {
+    key: 'root',
+    storage,
+    whitelist: ['CityReducer']
+}
 const reducer = combineReducers({
     CityReducer,
     TabbarReducer,
     CinemaListReducer
 })
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-const store = createStore(reducer, composeEnhancers(applyMiddleware(reduxThunk, reduxPromise)))
-// const store = createYueStore(reducer)
 
-export default store
+const persistedReducer = persistReducer(persistConfig, reducer)
+
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const store = createStore(persistedReducer, composeEnhancers(applyMiddleware(reduxThunk, reduxPromise)))
+// const store = createYueStore(reducer)
+let persistor = persistStore(store)
+
+export { store, persistor }
 
 
 /*

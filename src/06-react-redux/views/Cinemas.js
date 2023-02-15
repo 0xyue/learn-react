@@ -1,33 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import store from '../redux/store'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 import getCinemaListAction from '../redux/actionCreator/getCinemaListAction'
 
 
-export default function Cinemas(props) {
+function Cinemas(props) {
 
-    const [city] = useState(store.getState().CityReducer.city)
-    const [list, setList] = useState(store.getState().CinemaListReducer.list)
+    let { city, list, getCinemaListAction } = props
 
     useEffect(() => {
-        if (store.getState().CinemaListReducer.list.length === 0) {
-            // 去后台取数据 actionCreator 里写异步
-            store.dispatch(getCinemaListAction())
-        } else {
-            console.log("cinema中,store 缓存")
+        if (list.length === 0) {
+            getCinemaListAction()
         }
-
-        // 订阅
-        var unsubscribe = store.subscribe(() => {
-            console.log("cinema中订阅", store.getState())
-            setList(store.getState().CinemaListReducer.list)
-        })
-        return () => {
-            // 销毁时取消订阅
-            unsubscribe()
-        }
-
-
-    }, [])
+    }, [list])
 
 
     return (
@@ -54,3 +38,15 @@ export default function Cinemas(props) {
         </div>
     )
 }
+
+const mapStateToProps = (state) => {
+    return {
+        city: state.CityReducer.city,
+        list: state.CinemaListReducer.list
+    }
+}
+
+const mapDispatchToProps = {
+    getCinemaListAction
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Cinemas)

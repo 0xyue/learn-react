@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 import { hide, show } from '../redux/actionCreator/TabbarActionCreator'
-import store from '../redux/store'
 
-export default function Detail(props) {
-
+function Detail(props) {
+    let { show, hide, match } = props
     useEffect(() => {
-        store.dispatch(hide())
+        console.log("Detail-props", props)
+        console.log("Detail-filmId", match.params.filmId, "利用id取后端拿数据")
+        hide()
         return () => {
-            store.dispatch(show())
+            show()
         }
-
-    }, [])
+    }, [match.params.filmId])
 
     return (
         <div>
@@ -18,3 +19,11 @@ export default function Detail(props) {
         </div>
     )
 }
+
+const mapDispatchToProps = {
+    show,
+    hide
+}
+
+// connect第一个参数是给孩子传的属性，第二个函数是回调函数
+export default connect(null, mapDispatchToProps)(Detail)

@@ -3,32 +3,27 @@ import React, { Component } from 'react'
 import Tabbar from './components/Tabbar'
 import MRouter from './router/IndexRouter'
 import './views/css/App.css'
-import store from './redux/store'
+import { connect } from 'react-redux'
 
-export default class App extends Component {
+class App extends Component {
 
-    state = {
-        isShow: store.getState().TabbarReducer.show
-    }
-
-    componentDidMount() {
-        store.subscribe(() => {
-            console.log("app 中订阅", store.getState())
-            this.setState({
-                isShow: store.getState().TabbarReducer.show
-            })
-        })
-
-    }
 
     render() {
         return (
             <div>
                 <MRouter>
-                    {this.state.isShow && <Tabbar />}
+                    {this.props.isShow && <Tabbar />}
                 </MRouter>
 
             </div>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        isShow: state.TabbarReducer.show
+    }
+}
+
+export default connect(mapStateToProps)(App)
