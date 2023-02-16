@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from 'react-dom/client'
-import App from './08-antd-mobile/App'
+import App from './06-react-redux/App'
 import { Provider } from "react-redux"
-import { store, persistor } from './08-antd-mobile/redux/store'
+import { store, persistor } from './06-react-redux/redux/store'
 import { PersistGate } from "redux-persist/integration/react"
 
 
