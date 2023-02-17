@@ -1,24 +1,47 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Badge, TabBar } from 'antd-mobile'
 import style from './Tabbar.module.css'
+import {
+    AppOutline,
+    UnorderedListOutline,
+    UserOutline,
+} from 'antd-mobile-icons'
+import { withRouter } from 'react-router-dom'
 
-export default function Tabbar() {
+function YueTabBar(props) {
+    const tabs = [
+        {
+            key: '/films',
+            title: '电影',
+            icon: <AppOutline />,
+            badge: Badge.dot,
+        },
+        {
+            key: '/cinemas',
+            title: '剧院',
+            icon: <UnorderedListOutline />,
+            badge: '5',
+        },
+        {
+            key: '/center',
+            title: '我的',
+            icon: <UserOutline />,
+        },
+    ]
     return (
         <div className={style.tabbar}>
-            <ul>
-                <li>
-                    {/* <a href="#/films">电影</a> */}
-                    <NavLink to="/films" activeClassName={style.active}>电影</NavLink>
-                </li>
-                <li>
-                    {/* <a href="#/cinemas">影院</a> */}
-                    <NavLink to="/cinemas" activeClassName={style.active}>剧院</NavLink>
-                </li>
-                <li>
-                    {/* <a href="#/center">我的</a> */}
-                    <NavLink to="/center" activeClassName={style.active}>我的</NavLink>
-                </li>
-            </ul>
+            <TabBar
+                activeKey={"/" + props.location.pathname.split("/")[1]}
+                onChange={key => {
+                    props.history.push(key)
+                }}
+            >
+                {tabs.map(item => (
+                    <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
+                ))}
+            </TabBar>
         </div>
     )
 }
+
+export default withRouter(YueTabBar)

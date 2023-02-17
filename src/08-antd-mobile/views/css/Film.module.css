@@ -6,3 +6,13 @@
 .film ul li {
     list-style: none;
 }
+
+.content {
+    height: 180px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    user-select: none;
+}

@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { show, hide } from '../redux/actionCreator/TabbarActionCreator'
 
-export default function Login(props) {
+function Login(props) {
     const history = useHistory()
+
+    let { show, hide } = props
+    useEffect(() => {
+        console.log("Login-props", props)
+        hide()
+        return () => {
+            show()
+        }
+    }, [])
 
     return (
         <div>
@@ -17,3 +28,10 @@ export default function Login(props) {
         </div>
     )
 }
+
+const mapDispatchToProps = {
+    show,
+    hide
+}
+
+export default connect(null, mapDispatchToProps)(Login)

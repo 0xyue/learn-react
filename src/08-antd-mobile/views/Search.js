@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { store } from '../redux/store'
 import getCinemaListAction from '../redux/actionCreator/getCinemaListAction'
 
@@ -6,7 +6,9 @@ export default function Search() {
 
     const [list, setList] = useState(store.getState().CinemaListReducer.list)
     const [mytext, setMytext] = useState("")
+    const inputRef = useRef(null)
     useEffect(() => {
+        inputRef.current.focus()
         if (store.getState().CinemaListReducer.list.length === 0) {
             // 去后台取数据 actionCreator 里写异步
             store.dispatch(getCinemaListAction())
@@ -36,9 +38,12 @@ export default function Search() {
             )
         }, [list, mytext]
     )
+
+
+
     return (
         <div>
-            <input value={mytext} onChange={(evt) => { setMytext(evt.target.value) }} />
+            <input value={mytext} onChange={(evt) => { setMytext(evt.target.value) }} ref={inputRef} />
             {
                 getCinemaList.map((item) => {
                     return (
