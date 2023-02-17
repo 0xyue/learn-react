@@ -30,8 +30,9 @@ const Films = (props) => {
 
     return (
         <div className={style.film}>
-            <div style={{ position: "sticky", top: 0, background: "white" }} >
-                <Swiper autoplay={true} loop={true}>{items}</Swiper>
+
+            <Swiper autoplay={true} loop={true}>{items}</Swiper>
+            <div style={{ position: "sticky", top: 0, background: "white", zIndex: 1 }} >
                 <Tabs
                     activeKey={props.location.pathname}
                     onChange={key => {

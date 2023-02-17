@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { store } from '../redux/store'
 import getCinemaListAction from '../redux/actionCreator/getCinemaListAction'
+import { SearchBar } from 'antd-mobile'
+
 
 export default function Search() {
 
     const [list, setList] = useState(store.getState().CinemaListReducer.list)
     const [mytext, setMytext] = useState("")
-    const inputRef = useRef(null)
+    const searchRef = useRef(null)
     useEffect(() => {
-        inputRef.current.focus()
+        searchRef.current.focus()
         if (store.getState().CinemaListReducer.list.length === 0) {
             // 去后台取数据 actionCreator 里写异步
             store.dispatch(getCinemaListAction())
@@ -43,7 +45,16 @@ export default function Search() {
 
     return (
         <div>
-            <input value={mytext} onChange={(evt) => { setMytext(evt.target.value) }} ref={inputRef} />
+            {/* <input value={mytext} onChange={(evt) => { setMytext(evt.target.value) }} ref={searchRef} /> */}
+            <div style={{ padding: "10px" }}>
+                <SearchBar
+                    placeholder='请输入内容'
+                    showCancelButton={() => true}
+                    onChange={(value) => { setMytext(value) }}
+                    ref={searchRef}
+                    value={mytext}
+                />
+            </div>
             {
                 getCinemaList.map((item) => {
                     return (

@@ -1,8 +1,9 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Image, List, InfiniteScroll } from 'antd-mobile'
+import axios from 'axios'
 
 let pageNum = 1
+
 async function getFilms() {
     console.log("getFilms-pageNum:", pageNum)
     const res = await axios({
@@ -31,21 +32,13 @@ export default function Nowplaying(props) {
 
     }
 
-    // useEffect(() => {
-    //     axios({
-    //         url: `https://m.maizuo.com/gateway?cityId=110100&pageNum=1&pageSize=10&type=1&k=6369301`,
-    //         method: 'get',
-    //         headers: {
-    //             'X-Client-Info': '{"a":"3000","ch":"1002","v":"5.2.1","e":"16748088144356071795720193","bc":"110100"}',
-    //             'X-Host': 'mall.film-ticket.film.list'
-    //         }
-    //     })
-    //         .then(res => {
-    //             console.log(res.data.data.films)
-    //             setlist(res.data.data.films)
-    //         })
-    //         .catch(err => { console.log(err) })
-    // }, [])
+    useEffect(() => {
+
+        return () => {
+            pageNum = 1
+        }
+    }, [])
+
 
     return (
         <div>
