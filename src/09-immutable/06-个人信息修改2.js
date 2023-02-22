@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
-import { Map, List } from 'immutable'
+import { fromJS } from 'immutable'
 
 export default class App extends Component {
     state = {
-        info: Map({
+        info: fromJS({
             name: '0xyue',
-            location: Map({
+            location: {
                 province: '安徽',
-                city: '淮南'
-            }),
-            favor: List(['读书', '看报', '写代码'])
+                city: '合肥'
+            },
+            favor: ['读书', '看报', '写代码']
         })
     }
+
+    componentDidMount() {
+        console.log(this.state.info)
+    }
+
     render() {
         return (
             <div>
@@ -19,9 +24,9 @@ export default class App extends Component {
                 <button onClick={() => {
                     this.setState({
                         info: this.state.info.set('name', '小明')
-                            .set('location', this.state.info.get('location').set('city', '合肥'))
+                            .setIn(['location', 'city'], '淮南')
                     })
-                }}>修改</button>
+                }} >修改</button>
                 {
                     this.state.info.get('name')
                 }
@@ -33,20 +38,21 @@ export default class App extends Component {
                 {
                     this.state.info.get('location').get('city')
                 }
-                <br />
+                < br />
                 {
                     this.state.info.get('favor').map((item, index) =>
-                        <li key={item}>
+                        <li key={index}>
                             {item}
                             <button onClick={(index) => {
                                 this.setState({
-                                    info: this.state.info.set('favor', this.state.info.get('favor').splice(index, 1))
+                                    // info: this.state.info.setIn(['favor', index],'111')
+                                    info: this.state.info.updateIn(['favor'], (list) => list.splice(index, 1))
                                 })
                             }}>del</button>
                         </li>
                     )
                 }
-            </div>
+            </div >
         )
     }
 }
