@@ -12,8 +12,9 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        console.log("App-store.isTabbarShow:", store.isTabbarShow)
+
         autorun(() => {
+            console.log("App-store.isTabbarShow:", store.isTabbarShow)
             this.setState({
                 isShow: store.isTabbarShow
             })

@@ -5,15 +5,13 @@ export default function Detail(props) {
     console.log("Detail-props:", props, ",filmId:", props.match.params.filmId)
 
     useEffect(() => {
-
+        console.log("Detail-store.isTabbarShow:", store.isTabbarShow)
         // store.isTabbarShow = false
         store.tabbarHide()
-        console.log("Detail-store.isTabbarShow:", store.isTabbarShow)
         return () => {
-
+            console.log("Detail销毁-store.isTabbarShow:", store.isTabbarShow)
             // store.isTabbarShow = true
             store.tabbarShow()
-            console.log("Detail销毁-store.isTabbarShow:", store.isTabbarShow)
         }
     }, [])
 

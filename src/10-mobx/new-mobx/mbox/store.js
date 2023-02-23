@@ -1,4 +1,4 @@
-import { observable, configure, action, runInAction } from "mobx"
+import { makeAutoObservable, configure, runInAction } from "mobx"
 import axios from "axios"
 
 
@@ -6,33 +6,23 @@ configure({
     enforceActions: "always"
 })
 
-// const store = observable({
-//     isTabbarShow: true,
-//     list: [],
-//     city: "北京",
-//     tabbarShow() {
-//         this.isTabbarShow = true
-//     },
-//     tabbarHide() {
-//         this.isTabbarShow = false
-//     }
 
-// }, {
-//     tabbarShow: action,
-//     tabbarHide: action
-// })
 
 class Store {
-    @observable isTabbarShow = true
-    @observable list = []
-    @observable city = "北京"
-    @action tabbarShow() {
+    isTabbarShow = true
+    list = []
+    city = "北京"
+    constructor() {
+        makeAutoObservable(this)
+    }
+
+    tabbarShow() {
         this.isTabbarShow = true
     }
-    @action tabbarHide() {
+    tabbarHide() {
         this.isTabbarShow = false
     }
-    @action async getList() {
+    async getList() {
         var list = await axios({
             url: 'https://m.maizuo.com/gateway?cityId=110100&ticketFlag=1&k=8030934',
             method: 'get',
